@@ -1,0 +1,565 @@
+{
+	"CoSimVersion" : "2024R3",
+	"items" : 
+	[
+		{
+			"color" : 
+			[
+				1.0,
+				0.0,
+				0.0
+			],
+			"name" : "P1",
+			"opacity" : 1.0,
+			"type" : "Point",
+			"visible" : true,
+			"x" : -0.050000000000000003,
+			"y" : -0.050000000000000003,
+			"z" : 0.0
+		},
+		{
+			"color" : 
+			[
+				1.0,
+				0.0,
+				0.0
+			],
+			"name" : "P2",
+			"opacity" : 1.0,
+			"type" : "Point",
+			"visible" : true,
+			"x" : 0.050000000000000003,
+			"y" : -0.050000000000000003,
+			"z" : 0.0
+		},
+		{
+			"color" : 
+			[
+				1.0,
+				0.0,
+				0.0
+			],
+			"name" : "P3",
+			"opacity" : 1.0,
+			"type" : "Point",
+			"visible" : true,
+			"x" : 0.050000000000000003,
+			"y" : 0.050000000000000003,
+			"z" : 0.0
+		},
+		{
+			"color" : 
+			[
+				1.0,
+				0.0,
+				0.0
+			],
+			"name" : "P4",
+			"opacity" : 1.0,
+			"type" : "Point",
+			"visible" : true,
+			"x" : -0.050000000000000003,
+			"y" : 0.050000000000000003,
+			"z" : 0.0
+		},
+		{
+			"color" : 
+			[
+				1.0,
+				0.0,
+				0.0
+			],
+			"name" : "P5",
+			"opacity" : 1.0,
+			"type" : "Point",
+			"visible" : true,
+			"x" : -0.050000000000000003,
+			"y" : -0.050000000000000003,
+			"z" : 0.10000000000000001
+		},
+		{
+			"color" : 
+			[
+				1.0,
+				0.0,
+				0.0
+			],
+			"name" : "P6",
+			"opacity" : 1.0,
+			"type" : "Point",
+			"visible" : true,
+			"x" : 0.050000000000000003,
+			"y" : -0.050000000000000003,
+			"z" : 0.10000000000000001
+		},
+		{
+			"color" : 
+			[
+				1.0,
+				0.0,
+				0.0
+			],
+			"name" : "P7",
+			"opacity" : 1.0,
+			"type" : "Point",
+			"visible" : true,
+			"x" : 0.050000000000000003,
+			"y" : 0.050000000000000003,
+			"z" : 0.10000000000000001
+		},
+		{
+			"color" : 
+			[
+				1.0,
+				0.0,
+				0.0
+			],
+			"name" : "P8",
+			"opacity" : 1.0,
+			"type" : "Point",
+			"visible" : true,
+			"x" : -0.050000000000000003,
+			"y" : 0.050000000000000003,
+			"z" : 0.10000000000000001
+		},
+		{
+			"a" : "P1",
+			"b" : "P2",
+			"color" : 
+			[
+				1.0,
+				0.0,
+				0.0
+			],
+			"name" : "L1",
+			"opacity" : 1.0,
+			"type" : "Line",
+			"visible" : true
+		},
+		{
+			"a" : "P2",
+			"b" : "P3",
+			"color" : 
+			[
+				1.0,
+				0.0,
+				0.0
+			],
+			"name" : "L2",
+			"opacity" : 1.0,
+			"type" : "Line",
+			"visible" : true
+		},
+		{
+			"a" : "P3",
+			"b" : "P4",
+			"color" : 
+			[
+				1.0,
+				0.0,
+				0.0
+			],
+			"name" : "L3",
+			"opacity" : 1.0,
+			"type" : "Line",
+			"visible" : true
+		},
+		{
+			"a" : "P4",
+			"b" : "P1",
+			"color" : 
+			[
+				1.0,
+				0.0,
+				0.0
+			],
+			"name" : "L4",
+			"opacity" : 1.0,
+			"type" : "Line",
+			"visible" : true
+		},
+		{
+			"a" : "P5",
+			"b" : "P6",
+			"color" : 
+			[
+				1.0,
+				0.0,
+				0.0
+			],
+			"name" : "L5",
+			"opacity" : 1.0,
+			"type" : "Line",
+			"visible" : true
+		},
+		{
+			"a" : "P6",
+			"b" : "P7",
+			"color" : 
+			[
+				1.0,
+				0.0,
+				0.0
+			],
+			"name" : "L6",
+			"opacity" : 1.0,
+			"type" : "Line",
+			"visible" : true
+		},
+		{
+			"a" : "P7",
+			"b" : "P8",
+			"color" : 
+			[
+				1.0,
+				0.0,
+				0.0
+			],
+			"name" : "L7",
+			"opacity" : 1.0,
+			"type" : "Line",
+			"visible" : true
+		},
+		{
+			"a" : "P8",
+			"b" : "P5",
+			"color" : 
+			[
+				1.0,
+				0.0,
+				0.0
+			],
+			"name" : "L8",
+			"opacity" : 1.0,
+			"type" : "Line",
+			"visible" : true
+		},
+		{
+			"color" : 
+			[
+				0.21176470588235294,
+				0.61176470588235299,
+				0.015686274509803921
+			],
+			"line" : 
+			[
+				"L4",
+				"L3",
+				"L2",
+				"L1"
+			],
+			"name" : "bot",
+			"opacity" : 1.0,
+			"reverse" : 
+			[
+				true,
+				true,
+				true,
+				true
+			],
+			"type" : "SurfaceByLine",
+			"visible" : false
+		},
+		{
+			"color" : 
+			[
+				0.78431372549019607,
+				0.14901960784313725,
+				0.70196078431372544
+			],
+			"line" : 
+			[
+				"L5",
+				"L8",
+				"L7",
+				"L6"
+			],
+			"name" : "top",
+			"opacity" : 1.0,
+			"reverse" : 
+			[
+				true,
+				true,
+				true,
+				true
+			],
+			"type" : "SurfaceByLine",
+			"visible" : false
+		},
+		{
+			"color" : 
+			[
+				0.18431372549019609,
+				0.24313725490196078,
+				0.21568627450980393
+			],
+			"h" : 0.10000000000000001,
+			"name" : "sample",
+			"opacity" : 1.0,
+			"ox" : 0.0,
+			"oy" : 0.0,
+			"oz" : 1.0,
+			"r" : 0.025000000000000001,
+			"resolution" : 30,
+			"type" : "SolidByCylinder",
+			"visible" : false,
+			"x" : 0.0,
+			"y" : 0.0,
+			"z" : 0.0
+		},
+		{
+			"a" : "bot",
+			"algorithm" : 5,
+			"classify" : true,
+			"color" : 
+			[
+				0.21176470588235294,
+				0.61176470588235299,
+				0.015686274509803921
+			],
+			"flip" : true,
+			"maxSize" : 0.01,
+			"minSize" : 0.01,
+			"name" : "bot",
+			"opacity" : 1.0,
+			"type" : "TriangleMeshBySurface",
+			"visible" : true
+		},
+		{
+			"a" : "top",
+			"algorithm" : 5,
+			"classify" : true,
+			"color" : 
+			[
+				0.78431372549019607,
+				0.14901960784313725,
+				0.70196078431372544
+			],
+			"flip" : false,
+			"maxSize" : 0.01,
+			"minSize" : 0.01,
+			"name" : "top",
+			"opacity" : 1.0,
+			"type" : "TriangleMeshBySurface",
+			"visible" : true
+		},
+		{
+			"a" : "sample",
+			"algorithm" : 5,
+			"classify" : true,
+			"clumpArr" : [],
+			"color" : 
+			[
+				0.97254901960784312,
+				0.082352941176470587,
+				0.90588235294117647
+			],
+			"joint" : [],
+			"maxSize" : 0.0050000000000000001,
+			"minSize" : 0.0050000000000000001,
+			"name" : "sample",
+			"opacity" : 1.0,
+			"type" : "PolyMeshBySolid",
+			"visible" : true
+		},
+		{
+			"category" : "Frictional",
+			"method" : "DEM",
+			"name" : "plate",
+			"parameter" : 
+			{
+				"A" : 0.5,
+				"Density" : 24000000.0,
+				"Dynamic Friction Angle" : 40.0,
+				"Poisson's Ratio" : 0.20000000000000001,
+				"Restitution Coefficient" : 1.0,
+				"Set FricReduction" : false,
+				"Static Friction Angle" : 40.0,
+				"Vc" : 5.0,
+				"Young's Modulus" : 5000000000.0
+			},
+			"type" : "Material"
+		},
+		{
+			"category" : "CohesiveFrictional",
+			"method" : "DEM",
+			"name" : "rock",
+			"parameter" : 
+			{
+				"A" : 0.5,
+				"Density" : 27000000.0,
+				"Dynamic Friction Angle" : 42.0,
+				"K_Roll" : 1.0,
+				"K_Twist" : 1.0,
+				"Normal Cohesion" : 10000000.0,
+				"Poisson's Ratio" : 0.26000000000000001,
+				"Restitution Coefficient" : 0.98999999999999999,
+				"Set FricReduction" : true,
+				"Shear Cohesion" : 8300000.0,
+				"Static Friction Angle" : 45.0,
+				"Tensile Modulus" : 19800000000.0,
+				"Vc" : 5.0,
+				"Young's Modulus" : 50000000000.0,
+				"max_Roll" : -1.0,
+				"max_Twist" : -1.0
+			},
+			"type" : "Material"
+		},
+		{
+			"isWhole" : true,
+			"material" : "plate",
+			"name" : "bot",
+			"parameter" : 
+			{
+				"setType" : "TriMesh"
+			},
+			"src" : "bot",
+			"type" : "Set"
+		},
+		{
+			"isWhole" : true,
+			"material" : "rock",
+			"name" : "sample",
+			"parameter" : 
+			{
+				"setType" : "Poly"
+			},
+			"src" : "sample",
+			"type" : "Set"
+		},
+		{
+			"isWhole" : true,
+			"material" : "plate",
+			"name" : "top",
+			"parameter" : 
+			{
+				"setType" : "TriMesh"
+			},
+			"src" : "top",
+			"type" : "Set"
+		},
+		{
+			"category" : "CohFrac_Poly_Poly",
+			"name" : "cpp",
+			"parameter" : 
+			{
+				"CVI Threshold" : 9.9999999999999995e-07,
+				"ECC Method" : 0,
+				"GJK Threshold" : 1e-08,
+				"HalfPlane Threshold" : 0.0001,
+				"Is ECC Model" : false,
+				"MiddlePhase" : "HalfPlane",
+				"Record Energy" : false,
+				"Use Viscocity" : false,
+				"Volume Cut" : 0.10000000000000001
+			},
+			"type" : "ContactLaw"
+		},
+		{
+			"category" : "Fric_Poly_Mesh",
+			"name" : "fpm",
+			"parameter" : 
+			{
+				"Apply Mesh Parameters" : false,
+				"Depth Cut" : 0.20000000000000001,
+				"Record Energy" : false,
+				"Use Depth" : false,
+				"Use Viscocity" : false
+			},
+			"type" : "ContactLaw"
+		},
+		{
+			"frequency" : 0,
+			"id" : 0,
+			"name" : "Initial",
+			"parameter" : null,
+			"steps" : 0,
+			"timeStep" : 0.0,
+			"type" : "Step"
+		},
+		{
+			"frequency" : 20,
+			"id" : 1,
+			"name" : "step1",
+			"parameter" : 
+			{
+				"DEM" : 
+				{
+					"Rolling Damping" : 0.10000000000000001,
+					"Translating Damping" : 0.10000000000000001
+				}
+			},
+			"steps" : 200,
+			"timeStep" : 1.5e-05,
+			"type" : "Step"
+		},
+		{
+			"active" : 
+			[
+				true,
+				true
+			],
+			"category" : "velocity",
+			"name" : "B1",
+			"parameter" : 
+			{
+				"Z" : -9.9999999999999995e-08
+			},
+			"set" : "top",
+			"type" : "Boundary"
+		},
+		{
+			"active" : 
+			[
+				true,
+				true
+			],
+			"frequency" : 1,
+			"name" : "main",
+			"parameter" : 
+			{
+				"displacement" : 
+				{
+					"x" : true,
+					"y" : true,
+					"z" : true
+				},
+				"force" : 
+				{
+					"x" : true,
+					"y" : true,
+					"z" : true
+				},
+				"velocity" : 
+				{
+					"x" : true,
+					"y" : true,
+					"z" : true
+				}
+			},
+			"set" : "top",
+			"type" : "History"
+		}
+	],
+	"method" : 3,
+	"methodSetting" : 
+	{
+		"DEM" : 
+		{
+			"auto" : true,
+			"end" : 
+			[
+				0.051999999999999998,
+				0.051999999999999998,
+				0.10199999999999999
+			],
+			"origin" : 
+			[
+				-0.051999999999999998,
+				-0.051999999999999998,
+				-0.002
+			],
+			"type" : "BVH"
+		}
+	}
+}
