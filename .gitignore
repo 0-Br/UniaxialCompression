@@ -3,3 +3,7 @@ __pycache__/
 Results/
 outputs/
 .ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/

@@ -2,7 +2,7 @@
 
 # Rock Uniaxial Compression Test: DEM Simulation & Machine Learning
 
-## 项目背景 | Background
+## 项目背景 / Background
 
 本项目为清华大学水利水电工程系徐文杰老师《工程地质》课程的研究项目。
 
@@ -18,30 +18,38 @@ The project uses the Discrete Element Method (DEM) to simulate uniaxial compress
 - **Rock classification**: identifying rock types from mechanical response features
 - **Parameter regression**: predicting material parameters (friction angle, cohesion) from mechanical responses
 
-## 方法概述 | Methodology
+## 方法概述 / Methodology
 
 ```
 材料参数设定 → CoSim DEM 模拟 → 力-位移曲线 → 特征工程 → 机器学习（分类 / 回归）
 ```
 
-1. **数据生成**：通过 CoSim 软件，对每种岩石在不同材料参数组合下运行 DEM 单轴压缩模拟，每种岩石约 396 组模拟
+1. **数据生成**：通过 CoSim 2024 R2 软件，对每种岩石在不同材料参数组合下运行 DEM 单轴压缩模拟，每种岩石约 396 组模拟
 2. **特征工程**：从力-位移曲线中提取 9 个特征（峰值力、峰值位移、曲线下面积等）
 3. **机器学习**：
-   - 分类：Logistic Regression, Decision Tree, Random Forest, Naive Bayes, KNN, SVM, AdaBoost, Gradient Boosting
+   - 分类：Logistic Regression, Decision Tree, Random Forest, Naive Bayes, KNN, SVM, AdaBoost, Gradient Boosting（共 8 种分类器）
    - 回归：预测静摩擦角（tan(StaticFric)）和正黏聚力（normalCohesion）
 
-## 岩石类型 | Rock Types
+1. **Data generation**: Run DEM uniaxial compression simulations in CoSim 2024 R2 for each rock type across multiple material parameter combinations (~396 simulations per rock type)
+2. **Feature engineering**: Extract 9 features from force-displacement curves (peak force, peak displacement, area under curve, etc.)
+3. **Machine learning**:
+   - Classification: 8 classifiers (Logistic Regression, Decision Tree, Random Forest, Naive Bayes, KNN, SVM, AdaBoost, Gradient Boosting)
+   - Regression: predicting friction angle (tan(StaticFric)) and cohesion (normalCohesion)
+
+## 岩石类型 / Rock Types
 
 共 15 种岩石，分为 4 组：
 
-| A 组 | B 组 | C 组 | D 组 |
+15 rock types in 4 groups:
+
+| A 组 / Group A | B 组 / Group B | C 组 / Group C | D 组 / Group D |
 |------|------|------|------|
 | 砂岩 Sandstone | 安山岩 Andesite | 片麻岩 Gneiss | 砾岩 Conglomerate |
 | 流纹岩 Rhyolite | 闪长岩 Diorite | 板岩 Slate | 页岩 Shale |
 | 花岗岩 Granite | 辉长岩 Gabbro | 石英岩 Quartzite | 石灰岩 Limestone |
 | 正长岩 Syenite | 玄武岩 Basalt | 大理岩 Marble | 白云岩 Dolomite |
 
-## 项目结构 | Project Structure
+## 文件结构 / Project Structure
 
 ```
 UniaxialCompression/
@@ -65,11 +73,11 @@ UniaxialCompression/
 └── CoSim软件使用手册-2024R2.pdf  # CoSim 软件手册
 ```
 
-## 使用方法 | Usage
+## 使用方法 / Usage
 
-### 1. 数据生成（需要 CoSim 环境）
+### 数据生成（需要 CoSim 环境） / Data Generation (requires CoSim)
 
-1. 在 `main/runme.py` 中将 `cosim` 变量修改为你本地 CoSim 附带的 Python 环境路径
+1. 在 `main/runme.py` 中将 `cosim` 变量修改为本地 CoSim 附带的 Python 环境路径
 2. 根据目标岩石类型设定材料参数（密度、杨氏模量、泊松比、摩擦角、黏聚力）
 3. 在 `main/` 目录下运行：
    ```bash
@@ -77,11 +85,30 @@ UniaxialCompression/
    ```
 4. 运行完成后，将生成的 `outputs/` 文件夹重命名为对应岩石名称，再进行下一组
 
-### 2. 机器学习分析
+1. Set the `cosim` variable in `main/runme.py` to your local CoSim Python environment path
+2. Configure material parameters for the target rock type (density, Young's modulus, Poisson's ratio, friction angle, cohesion)
+3. Run in the `main/` directory:
+   ```bash
+   python runme.py
+   ```
+4. After completion, rename the generated `outputs/` folder to the corresponding rock name before proceeding to the next group
+
+### 机器学习分析 / Machine Learning Analysis
 
 打开 `ml.ipynb`，依次运行各 cell 即可完成数据加载、特征提取、分类与回归分析。
 
-## 依赖 | Dependencies
+Open `ml.ipynb` and run cells sequentially to perform data loading, feature extraction, classification, and regression analysis.
 
-- **DEM 模拟**：[CoSim](https://www.cosimgroup.com/) 及其附带的 Python 环境
+## 依赖 / Dependencies
+
+- **DEM 模拟**：[CoSim](https://www.cosimgroup.com/) 2024 R2 及其附带的 Python 环境
 - **机器学习**：NumPy, scikit-learn, Matplotlib, Seaborn
+
+- **DEM simulation**: [CoSim](https://www.cosimgroup.com/) 2024 R2 with its bundled Python environment
+- **Machine learning**: NumPy, scikit-learn, Matplotlib, Seaborn
+
+## 许可 / License
+
+本项目用于研究与教学目的。
+
+This project is for research and educational purposes.
