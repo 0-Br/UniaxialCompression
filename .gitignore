@@ -1,9 +1,23 @@
+# Python 编译产物
 __pycache__/
 *.pyc
-Results/
-outputs/
+
+# Jupyter
 .ipynb_checkpoints/
 
-# IDE
+# 项目生成文件
+Results/
+outputs/
+
+# 系统文件
+.DS_Store
+._*
+Thumbs.db
+
+# 编辑器与 IDE
 .vscode/
 .idea/
+*.swp
+*.swo
+*~
+\#*\#
