@@ -2,7 +2,7 @@
 
 # Rock Uniaxial Compression Test: DEM Simulation & Machine Learning
 
-## 项目背景 / Background
+## 背景 / Background
 
 本项目为清华大学水利水电工程系徐文杰老师《工程地质》课程的研究项目。
 
@@ -49,7 +49,7 @@ The project uses the Discrete Element Method (DEM) to simulate uniaxial compress
 | 花岗岩 Granite | 辉长岩 Gabbro | 石英岩 Quartzite | 石灰岩 Limestone |
 | 正长岩 Syenite | 玄武岩 Basalt | 大理岩 Marble | 白云岩 Dolomite |
 
-## 文件结构 / Project Structure
+## 项目结构 / Project Structure
 
 ```
 UniaxialCompression/
