@@ -46,8 +46,8 @@ The project uses the Discrete Element Method (DEM) to simulate uniaxial compress
 |------|------|------|------|
 | 砂岩 Sandstone | 安山岩 Andesite | 片麻岩 Gneiss | 砾岩 Conglomerate |
 | 流纹岩 Rhyolite | 闪长岩 Diorite | 板岩 Slate | 页岩 Shale |
-| 花岗岩 Granite | 辉长岩 Gabbro | 石英岩 Quartzite | 石灰岩 Limestone |
-| 正长岩 Syenite | 玄武岩 Basalt | 大理岩 Marble | 白云岩 Dolomite |
+| 正长岩 Syenite | 辉长岩 Gabbro | 石英岩 Quartzite | 石灰岩 Limestone |
+|  | 玄武岩 Basalt | 大理岩 Marble | 白云岩 Dolomite |
 
 ## 项目结构 / Project Structure
 
