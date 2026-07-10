@@ -1,8 +1,8 @@
-# 基于 DEM 模拟与机器学习的岩石单轴压缩试验研究
+# UniaxialCompression
 
-# Rock Uniaxial Compression Test: DEM Simulation & Machine Learning
+**基于 DEM 模拟与机器学习的岩石单轴压缩试验研究 | Rock Uniaxial Compression Test: DEM Simulation & Machine Learning**
 
-## 背景 / Background
+## 简介 / Introduction
 
 本项目为清华大学水利水电工程系徐文杰老师《工程地质》课程的研究项目。
 
@@ -18,7 +18,7 @@ The project uses the Discrete Element Method (DEM) to simulate uniaxial compress
 - **Rock classification**: identifying rock types from mechanical response features
 - **Parameter regression**: predicting material parameters (friction angle, cohesion) from mechanical responses
 
-## 方法概述 / Methodology
+## 方法 / Methodology
 
 ```
 材料参数设定 → CoSim DEM 模拟 → 力-位移曲线 → 特征工程 → 机器学习（分类 / 回归）
@@ -107,8 +107,6 @@ Open `ml.ipynb` and run cells sequentially to perform data loading, feature extr
 - **DEM simulation**: [CoSim](https://www.cosimgroup.com/) 2024 R2 with its bundled Python environment
 - **Machine learning**: NumPy, scikit-learn, Matplotlib, Seaborn
 
-## 许可 / License
+## 声明
 
-本项目用于研究与教学目的。
-
-This project is for research and educational purposes.
+本项目为清华大学《工程地质》课程研究项目，仅供学习交流参考，请勿直接复制用于课程作业提交。
