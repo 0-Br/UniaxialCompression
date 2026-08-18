@@ -28,13 +28,13 @@ The project uses the Discrete Element Method (DEM) to simulate uniaxial compress
 2. **特征工程**：从力-位移曲线中提取 9 个特征（峰值力、峰值位移、曲线下面积等）
 3. **机器学习**：
    - 分类：Logistic Regression, Decision Tree, Random Forest, Naive Bayes, KNN, SVM, AdaBoost, Gradient Boosting（共 8 种分类器）
-   - 回归：预测静摩擦角（tan(StaticFric)）和正黏聚力（normalCohesion）
+   - 回归：预测静摩擦角（tan(StaticFric)）；目标向量中另有正黏聚力（normalCohesion），但四个回归器均未对其拟合
 
 1. **Data generation**: Run DEM uniaxial compression simulations in CoSim 2024 R2 for each rock type across multiple material parameter combinations (~396 simulations per rock type)
 2. **Feature engineering**: Extract 9 features from force-displacement curves (peak force, peak displacement, area under curve, etc.)
 3. **Machine learning**:
    - Classification: 8 classifiers (Logistic Regression, Decision Tree, Random Forest, Naive Bayes, KNN, SVM, AdaBoost, Gradient Boosting)
-   - Regression: predicting friction angle (tan(StaticFric)) and cohesion (normalCohesion)
+   - Regression: predicting friction angle (tan(StaticFric)); cohesion (normalCohesion) is present in the target vector but none of the four regressors fits it
 
 ## 岩石类型 / Rock Types
 
@@ -46,7 +46,7 @@ The project uses the Discrete Element Method (DEM) to simulate uniaxial compress
 |------|------|------|------|
 | 砂岩 Sandstone | 安山岩 Andesite | 片麻岩 Gneiss | 砾岩 Conglomerate |
 | 流纹岩 Rhyolite | 闪长岩 Diorite | 板岩 Slate | 页岩 Shale |
-| 正长岩 Syenite | 辉长岩 Gabbro | 石英岩 Quartzite | 石灰岩 Limestone |
+| 正长岩 Syenite | 辉长岩 Gabbro | 石英岩 Quartzite（数据目录名为「石英」） | 石灰岩 Limestone |
 |  | 玄武岩 Basalt | 大理岩 Marble | 白云岩 Dolomite |
 
 ## 项目结构 / Project Structure
